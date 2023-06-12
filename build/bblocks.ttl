@@ -9,8 +9,8 @@
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-12T20:41:38.210489"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-12T20:41:38.005544"^^xsd:dateTime ;
+    prov:endedAtTime "2023-06-12T22:22:08.136884"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-12T22:22:07.900522"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
