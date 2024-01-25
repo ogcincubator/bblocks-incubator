@@ -1,3 +1,5 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -5,21 +7,23 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://www.opengis.net/def/bblocks> a skos:ConceptScheme ;
-    skos:prefLabel "OGC Building Blocks Register" .
+<https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/> a skos:ConceptScheme,
+        dcat:Catalog ;
+    bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/build/tests/report.html> ;
+    bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-12T22:22:08.136884"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-12T22:22:07.900522"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-25T21:15:59.049865"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-25T21:15:58.961553"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <file:///github/workspace/build/register.json> ] ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.0.0" ;
+            dct:hasVersion "0.3.33" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

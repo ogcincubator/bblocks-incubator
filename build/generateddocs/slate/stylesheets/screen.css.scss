@@ -639,3 +639,79 @@ html, body {
 aside a {
   color: $main-text;
 }
+
+.content .highlight pre.highlight {
+  max-height: 30em;
+}
+
+.rainbow-popup {
+  position: absolute;
+  z-index: 999;
+  max-width: 400px;
+  padding: 0.6em 0.6em 0;
+  background: #8fbcd4 center no-repeat;
+  border-radius: 3px;
+  border: 1px solid #999;
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+  }
+
+  &.loading {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/ajax-loader.gif);
+
+    * {
+      display: none;
+    }
+  }
+}
+
+[data-rainbow-uri] {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.copy-clipboard {
+  position: absolute;
+  right: 28px;
+}
+
+.content blockquote a[target=_blank] {
+  padding-left: 24px;
+  background: url(../images/external-link-white.svg) left center no-repeat;
+  background-size: 16px 16px;
+}
+
+.content blockquote p {
+  text-align: right;
+}
+
+.content blockquote a {
+  margin-left: 0.6em;
+}
+
+.content pre.highlight span a {
+  color: inherit;
+  border-bottom: dashed 1px rgba(200, 200, 200, 0.5);
+}
+
+.content .tab-yaml--schema,
+.content .tab-yaml--schema .w,
+.toc-link[href='#json-schema'] {
+  background-color: #111531;
+}
+
+.content .tab-json--ldContext,
+.content .tab-json--ldContext .w,
+.toc-link[href='#json-ld-context'] {
+  background-color: #1f0303;
+}

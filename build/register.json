@@ -1,1 +1,9 @@
-[]
+{
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [],
+  "baseURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/",
+  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/",
+  "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-incubator/master/build/tests/report.html"
+}
